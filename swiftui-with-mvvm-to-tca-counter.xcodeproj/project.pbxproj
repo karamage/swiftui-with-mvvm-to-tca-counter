@@ -21,6 +21,10 @@
 		2081F85F281287A100669DFC /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2081F85E281287A100669DFC /* Counter.swift */; };
 		2081F8612812893400669DFC /* CounterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2081F8602812893400669DFC /* CounterViewModel.swift */; };
 		2081F8632812917100669DFC /* CounterView_MVVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2081F8622812917100669DFC /* CounterView_MVVM.swift */; };
+		2081F86628129DA700669DFC /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 2081F86528129DA700669DFC /* ComposableArchitecture */; };
+		2081F86828129E3500669DFC /* CounterStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2081F86728129E3500669DFC /* CounterStore.swift */; };
+		2081F86A28129F4900669DFC /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2081F86928129F4900669DFC /* CounterView.swift */; };
+		2081F86C281380FD00669DFC /* SimpleCounterPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2081F86B281380FD00669DFC /* SimpleCounterPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +61,9 @@
 		2081F85E281287A100669DFC /* Counter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Counter.swift; sourceTree = "<group>"; };
 		2081F8602812893400669DFC /* CounterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewModel.swift; sourceTree = "<group>"; };
 		2081F8622812917100669DFC /* CounterView_MVVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView_MVVM.swift; sourceTree = "<group>"; };
+		2081F86728129E3500669DFC /* CounterStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterStore.swift; sourceTree = "<group>"; };
+		2081F86928129F4900669DFC /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
+		2081F86B281380FD00669DFC /* SimpleCounterPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCounterPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2081F86628129DA700669DFC /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				2081F85C281282B100669DFC /* SimpleCounterPage_MVVM.swift */,
+				2081F86B281380FD00669DFC /* SimpleCounterPage.swift */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -166,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				2081F8622812917100669DFC /* CounterView_MVVM.swift */,
+				2081F86928129F4900669DFC /* CounterView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -189,6 +199,7 @@
 		2081F85B2812822300669DFC /* Stores */ = {
 			isa = PBXGroup;
 			children = (
+				2081F86728129E3500669DFC /* CounterStore.swift */,
 			);
 			path = Stores;
 			sourceTree = "<group>";
@@ -209,6 +220,9 @@
 			dependencies = (
 			);
 			name = "swiftui-with-mvvm-to-tca-counter (iOS)";
+			packageProductDependencies = (
+				2081F86528129DA700669DFC /* ComposableArchitecture */,
+			);
 			productName = "swiftui-with-mvvm-to-tca-counter (iOS)";
 			productReference = 2081F822281280B400669DFC /* swiftui-with-mvvm-to-tca-counter.app */;
 			productType = "com.apple.product-type.application";
@@ -301,6 +315,9 @@
 				Base,
 			);
 			mainGroup = 2081F815281280B200669DFC;
+			packageReferences = (
+				2081F86428129DA700669DFC /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = 2081F823281280B400669DFC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -353,10 +370,13 @@
 			files = (
 				2081F8612812893400669DFC /* CounterViewModel.swift in Sources */,
 				2081F85F281287A100669DFC /* Counter.swift in Sources */,
+				2081F86828129E3500669DFC /* CounterStore.swift in Sources */,
 				2081F85D281282B100669DFC /* SimpleCounterPage_MVVM.swift in Sources */,
 				2081F845281280B400669DFC /* ContentView.swift in Sources */,
 				2081F843281280B400669DFC /* swiftui_with_mvvm_to_tca_counterApp.swift in Sources */,
 				2081F8632812917100669DFC /* CounterView_MVVM.swift in Sources */,
+				2081F86C281380FD00669DFC /* SimpleCounterPage.swift in Sources */,
+				2081F86A28129F4900669DFC /* CounterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -759,6 +779,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2081F86428129DA700669DFC /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2081F86528129DA700669DFC /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2081F86428129DA700669DFC /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2081F816281280B200669DFC /* Project object */;
 }
