@@ -21,4 +21,12 @@ class CounterViewModel:ObservableObject {
     func decrement() {
         counter.decrement()
     }
+    
+    func incrementRandom10() {
+        counter.incrementRandom10()
+    }
+    
+    func decrementRandom10() {
+        counter.decrementRandom10()
+    }
 }

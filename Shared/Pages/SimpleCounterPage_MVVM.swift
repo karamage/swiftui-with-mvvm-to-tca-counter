@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-
 struct SimpleCounterPage_MVVM: View {
     private let readMe = "Single Counter with MVVM"
     var body: some View {

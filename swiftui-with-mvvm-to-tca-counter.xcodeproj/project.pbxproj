@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20632660281391320092784A /* RandomCounterView_MVVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2063265F281391320092784A /* RandomCounterView_MVVM.swift */; };
+		20632662281392460092784A /* TwoCounterPage_MVVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20632661281392460092784A /* TwoCounterPage_MVVM.swift */; };
 		2081F834281280B400669DFC /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2081F833281280B400669DFC /* Tests_iOS.swift */; };
 		2081F836281280B400669DFC /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2081F835281280B400669DFC /* Tests_iOSLaunchTests.swift */; };
 		2081F840281280B400669DFC /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2081F83F281280B400669DFC /* Tests_macOS.swift */; };
@@ -45,6 +47,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2063265F281391320092784A /* RandomCounterView_MVVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomCounterView_MVVM.swift; sourceTree = "<group>"; };
+		20632661281392460092784A /* TwoCounterPage_MVVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoCounterPage_MVVM.swift; sourceTree = "<group>"; };
 		2081F81B281280B200669DFC /* swiftui_with_mvvm_to_tca_counterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftui_with_mvvm_to_tca_counterApp.swift; sourceTree = "<group>"; };
 		2081F81C281280B200669DFC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2081F81D281280B400669DFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -167,6 +171,7 @@
 			children = (
 				2081F85C281282B100669DFC /* SimpleCounterPage_MVVM.swift */,
 				2081F86B281380FD00669DFC /* SimpleCounterPage.swift */,
+				20632661281392460092784A /* TwoCounterPage_MVVM.swift */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -175,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				2081F8622812917100669DFC /* CounterView_MVVM.swift */,
+				2063265F281391320092784A /* RandomCounterView_MVVM.swift */,
 				2081F86928129F4900669DFC /* CounterView.swift */,
 			);
 			path = Components;
@@ -370,11 +376,13 @@
 			files = (
 				2081F8612812893400669DFC /* CounterViewModel.swift in Sources */,
 				2081F85F281287A100669DFC /* Counter.swift in Sources */,
+				20632660281391320092784A /* RandomCounterView_MVVM.swift in Sources */,
 				2081F86828129E3500669DFC /* CounterStore.swift in Sources */,
 				2081F85D281282B100669DFC /* SimpleCounterPage_MVVM.swift in Sources */,
 				2081F845281280B400669DFC /* ContentView.swift in Sources */,
 				2081F843281280B400669DFC /* swiftui_with_mvvm_to_tca_counterApp.swift in Sources */,
 				2081F8632812917100669DFC /* CounterView_MVVM.swift in Sources */,
+				20632662281392460092784A /* TwoCounterPage_MVVM.swift in Sources */,
 				2081F86C281380FD00669DFC /* SimpleCounterPage.swift in Sources */,
 				2081F86A28129F4900669DFC /* CounterView.swift in Sources */,
 			);
