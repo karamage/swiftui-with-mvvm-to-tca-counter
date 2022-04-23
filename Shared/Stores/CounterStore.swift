@@ -29,3 +29,17 @@ let counterReducer = Reducer<CounterState, CounterAction, CounterEnvironment> { 
     }
 }
 
+let randomCounterReducer = Reducer<CounterState, CounterAction, CounterEnvironment> { state, action, _ in
+    switch action {
+    case .decrementButtonTapped:
+        state.count -= random10()
+        return .none
+    case .incrementButtonTapped:
+        state.count += random10()
+        return .none
+    }
+}
+
+private func random10() -> Int {
+    Int.random(in: 1 ... 10)
+}
