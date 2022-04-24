@@ -33,3 +33,5 @@ let countersReducer = Reducer<CountersState, CountersAction, CountersEnvironment
             environment: { _ in CounterEnvironment() }
         )
     )
+    // RandomCounterのReducerのAction実行後に、CounterのActionを実行したい場合
+    // .resending(/CountersAction.counter2, to: /CountersAction.counter1)
