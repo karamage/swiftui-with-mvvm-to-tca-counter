@@ -1,9 +1,9 @@
 # swiftui-with-mvvm-to-tca-counter
-Example code for SwiftUI to migrate from MVVM to TCA
+Example code for SwiftUI to migrate from MVVM to 「The Composable Architecture(TCA)」
 
 ## Summary
 
-This is a comparison code for SwiftUI, using MVVM and TCA.
+This is a comparison code for SwiftUI, using MVVM and 「The Composable Architecture(TCA)」.
 
 In the era of declarative UI, a composable (parts can be assembled) architecture is required.
 
